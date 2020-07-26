@@ -1,52 +1,69 @@
 <!DOCTYPE html>
 <html lang="eng">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Financo</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
-        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
-        <header class="header">
-            <div class="header-content">
-            <p>Available Budget In <span id="time"></span>:</p>
-            <p id="budget">0.00</p>
-            <div id="income-top" class="money">INCOME <span id="income">+ 0.00</span></div>
-            <div id="expense-top" class="money">EXPENSE <span id="expense">- 0.00</span></div>
-            <div id="expense-top"></div>
-            </div>
-        </header>
-        <form  id="form" class="input-area">
-            <select class="input" id="p-or-m">
-                <option value="1">+</option>
-                <option value="-1">-</option>
-            </select>
-            <input  class="input" type="text" id="description" placeholder="Add description">
-            <input  class="input" type="number" id="amount" placeholder="Value">
-            <button   class="input" id="ready"><ion-icon name="checkmark-circle-outline" size='large'></ion-icon></button>
-        </form>
-        <main class="main">
-            <div class="plus">
-                
-                <h2 class="blue">INCOME</h2>
-                <div>
-                    <ul id="plus">
-                        </ul>
-                </div>
-            </div>
-            <div class="minus">
-                <h2 class="red">EXPENSES</h2>
-                <div>
-                    <ul id="minus">
-                    </ul>
-                </div>
-            </div>
-        </main>
-        <script src="js/script.js"></script>
-        <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Financo</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <p>Available Budget In <span id="time"></span>:</p>
+        <p id="budget">0.00</p>
+        <div id="income-top" class="money">
+          INCOME <span id="income">+ 0.00</span>
+        </div>
+        <div id="expense-top" class="money">
+          EXPENSE <span id="expense">- 0.00</span>
+        </div>
+      </div>
+    </header>
+    <form id="form" class="input-area">
+      <select class="input" id="p-or-m">
+        <option value="1">+</option>
+        <option value="-1">-</option>
+      </select>
+      <input
+        class="input"
+        type="text"
+        id="description"
+        placeholder="Add description"
+      />
+      <input class="input" type="number" id="amount" placeholder="Value" />
+      <button class="input" id="ready">
+        <ion-icon name="checkmark-circle-outline" size="large"></ion-icon>
+      </button>
+    </form>
+    <main class="main">
+      <div class="plus">
+        <h2 class="blue">INCOME</h2>
+        <div>
+          <ul id="plus"></ul>
+        </div>
+      </div>
+      <div class="minus">
+        <h2 class="red">EXPENSES</h2>
+        <div>
+          <ul id="minus"></ul>
+        </div>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
