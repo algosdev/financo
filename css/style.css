@@ -111,6 +111,7 @@ body {
     width: 100vw;
     display: flex;
     text-align: center;
+    margin-top: 20px;
     justify-content: space-around;
 }
 .main ul{
